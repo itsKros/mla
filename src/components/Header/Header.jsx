@@ -41,6 +41,16 @@ function Header() {
                                     Book A Call
                                 </NavLink>                                
                             </li>
+                            <li>
+                                <NavLink
+                                    to="ai-book"
+                                    className={({isActive}) =>
+                                        `flex items-center text-gray-700 hover:text-primary  ${isActive ? "text-primary" : "text-gray-700"} font-semibold`
+                                    }
+                                >
+                                    AI Book
+                                </NavLink>                                
+                            </li>
                             
                             
                             

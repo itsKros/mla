@@ -28,6 +28,8 @@ function MarketingVipResourcesHub() {
         // Load jQuery and then Owl Carousel JS in order
         loadScript('https://code.jquery.com/jquery-3.6.0.min.js')
           .then(() => loadScript('https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'))
+          .then(() => loadScript('https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'))
+          
           .then(() => {
             const $ = window.jQuery;
     
@@ -104,19 +106,19 @@ function MarketingVipResourcesHub() {
           document.head.removeChild(owlCSS2);
           window?.jQuery?.(window).off('resize.accordion');
         };
-      }, []);
+
+    }, []);
   
 
   return (
     <>
     <section className="text-gray-600  body-font overflow-hidden">
-        <div className="container px-5 pt-10 mx-auto">
-            <div className="grad-bg flex flex-col text-center w-full p-20 mb-20 rounded-xl">
+        <div className="container px-5 pt-10 sm:px-2 mx-auto">
+            <div className="grad-bg flex flex-col text-center w-full sm:p-30 p-10 mb-15 rounded-xl">
                 <h1 className="sm:text-6xl text-4xl font-bold title-font mb-2 text-white">Marketing Vip Resources Hub
                 </h1>
-                <p className="lg:w-2/2 pt-3 px-12 mx-auto font-light text-white sm:text-lg leading-relaxed">Your ultimate
-                    toolkit for turning
-                    your Mini Lessons Academy courses and books into buzzworthy successes! Dive into exclusive marketing
+                <p className="lg:w-2/2 pt-3 sm:px-12 px-0 mx-auto font-light text-white sm:text-lg leading-relaxed">Your ultimate
+                    toolkit for turning your Mini Lessons Academy courses and books into buzzworthy successes! Dive into exclusive marketing
                     strategies and insider tips to grow your audience, boost engagement, and transform your creations
                     into must-have content.</p>
             </div>
@@ -142,7 +144,7 @@ function MarketingVipResourcesHub() {
                 </button>
                 <div className="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
                     <div className="container px-5 py-10 mx-auto">
-                        <div className="grid grid-cols-4 gap-4">
+                        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                             <div className="xl:w-1/1 md:w-1/1">
                                 <div
                                     className="border flex flex-col p-2 relative overflow-hidden rounded-xl transition-all duration-300 cursor-pointer group ring-1 ring-blue-500 bg-gradient-to-br from-blue-50 to-white">
@@ -151,7 +153,7 @@ function MarketingVipResourcesHub() {
                                         <h3 className="rounded-lg py-2 px-4 mt-2 border-gray-200 border-1 bg-white">Tap
                                             to read online!</h3>
                                     </div>
-                                    <img className="lg:w-1/1 md:w-3/6 w-5/6 mb-2 object-cover objet-center mx-auto rounded-xl"
+                                    <img className="lg:w-1/1 mb-2 object-cover objet-center mx-auto rounded-xl"
                                         alt="hero" src="/img/Affiliate-Marketing-img.webp" />
                                     <a href=""
                                         className="lg:w-1/1 md:px-5 px-2.5 py-3 content-center rounded-lg font-medium text-sm text-center gap-2 transition-all duration-200 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white shadow-[0_4px_10px_-3px_rgba(124,58,237,0.5)]">Download</a>
@@ -165,7 +167,7 @@ function MarketingVipResourcesHub() {
                                         <h3 className="rounded-lg py-2 px-4 mt-2 border-gray-200 border-1 bg-white">Tap
                                             to read online!</h3>
                                     </div>
-                                    <img className="lg:w-1/1 md:w-3/6 w-5/6 mb-2 object-cover objet-center mx-auto rounded-xl"
+                                    <img className="lg:w-1/1 mb-2 object-cover objet-center mx-auto rounded-xl"
                                         alt="hero" src="/img/Affiliate-Marketing-img.webp" />
                                     <a href=""
                                         className="lg:w-1/1 md:px-5 px-2.5 py-3 content-center rounded-lg font-medium text-sm text-center gap-2 transition-all duration-200 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white shadow-[0_4px_10px_-3px_rgba(124,58,237,0.5)]">Download</a>
@@ -179,7 +181,7 @@ function MarketingVipResourcesHub() {
                                         <h3 className="rounded-lg py-2 px-4 mt-2 border-gray-200 border-1 bg-white">Tap
                                             to read online!</h3>
                                     </div>
-                                    <img className="lg:w-1/1 md:w-3/6 w-5/6 mb-2 object-cover objet-center mx-auto rounded-xl"
+                                    <img className="lg:w-1/1 mb-2 object-cover objet-center mx-auto rounded-xl"
                                         alt="hero" src="/img/Affiliate-Marketing-img.webp" />
                                     <a href=""
                                         className="lg:w-1/1 md:px-5 px-2.5 py-3 content-center rounded-lg font-medium text-sm text-center gap-2 transition-all duration-200 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white shadow-[0_4px_10px_-3px_rgba(124,58,237,0.5)]">Download</a>
@@ -193,7 +195,7 @@ function MarketingVipResourcesHub() {
                                         <h3 className="rounded-lg py-2 px-4 mt-2 border-gray-200 border-1 bg-white">Tap
                                             to read online!</h3>
                                     </div>
-                                    <img className="lg:w-1/1 md:w-3/6 w-5/6 mb-2 object-cover objet-center mx-auto rounded-xl"
+                                    <img className="lg:w-1/1 mb-2 object-cover objet-center mx-auto rounded-xl"
                                         alt="hero" src="/img/Affiliate-Marketing-img.webp" />
                                     <a href=""
                                         className="lg:w-1/1 md:px-5 px-2.5 py-3 content-center rounded-lg font-medium text-sm text-center gap-2 transition-all duration-200 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white shadow-[0_4px_10px_-3px_rgba(124,58,237,0.5)]">Download</a>
@@ -222,28 +224,28 @@ function MarketingVipResourcesHub() {
                 </button>
                 <div className="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
                     <div className="container px-5 py-10 mx-auto">
-                        <div className="grid grid-cols-3 gap-4">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                             <div className="xl:w-1/1 md:w-1/1">
                                 <div
                                     className="border flex flex-col p-2 relative overflow-hidden rounded-xl transition-all duration-300 cursor-pointer group ring-1 ring-blue-500 bg-gradient-to-br from-blue-50 to-white">
-                                    <img className="lg:w-1/1 md:w-3/6 w-5/6 mb-2 object-cover objet-center mx-auto rounded-xl" alt="hero" src="/img/mf-1-768x432.jpg" />
-                                    <h3 className="text-center text-2xl font-semibold mb-2 transition-colors">VIP Lead
+                                    <img className="lg:w-1/1 mb-2 object-cover objet-center mx-auto rounded-xl" alt="hero" src="/img/mf-1-768x432.jpg" />
+                                    <h3 className="text-center text-l sm:text-2xl font-semibold mb-2 transition-colors">VIP Lead
                                         Gen Funnel</h3>
                                 </div>
                             </div>
                             <div className="xl:w-1/1 md:w-1/1">
                                 <div
                                     className="border flex flex-col p-2 relative overflow-hidden rounded-xl transition-all duration-300 cursor-pointer group ring-1 ring-blue-500 bg-gradient-to-br from-blue-50 to-white">
-                                    <img className="lg:w-1/1 md:w-3/6 w-5/6 mb-2 object-cover objet-center mx-auto rounded-xl" alt="hero" src="/img/mf-1-768x432.jpg" />
-                                    <h3 className="text-center text-2xl font-semibold mb-2 transition-colors">VIP Lead
+                                    <img className="lg:w-1/1 mb-3 object-cover objet-center mx-auto rounded-xl" alt="hero" src="/img/mf-1-768x432.jpg" />
+                                    <h3 className="text-center text-l sm:text-2xl font-semibold mb-2 transition-colors">VIP Lead
                                         Gen Funnel</h3>
                                 </div>
                             </div>
                             <div className="xl:w-1/1 md:w-1/1">
                                 <div
                                     className="border flex flex-col p-2 relative overflow-hidden rounded-xl transition-all duration-300 cursor-pointer group ring-1 ring-blue-500 bg-gradient-to-br from-blue-50 to-white">
-                                    <img className="lg:w-1/1 md:w-3/6 w-5/6 mb-2 object-cover objet-center mx-auto rounded-xl" alt="hero" src="/img/mf-1-768x432.jpg" />
-                                    <h3 className="text-center text-2xl font-semibold mb-2 transition-colors">VIP Lead
+                                    <img className="lg:w-1/1 mb-3 object-cover objet-center mx-auto rounded-xl" alt="hero" src="/img/mf-1-768x432.jpg" />
+                                    <h3 className="text-center text-l sm:text-2xl font-semibold mb-2 transition-colors">VIP Lead
                                         Gen Funnel</h3>
                                 </div>
                             </div>
@@ -270,24 +272,24 @@ function MarketingVipResourcesHub() {
                 </button>
                 <div className="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
                     <div className="container px-5 py-10 mx-auto">
-                        <div className="flex flex-row gap-4">
+                        <div className="flex sm:flex-row flex-col gap-4">
                             {/* <!-- 30% Width --> */}
-                            <div className="w-[20%] text-3xl font-semibold mb-2 transition-colors">
+                            <div className="w-[100%] sm:w-[20%]  text-3xl font-semibold mb-2 transition-colors">
                                 High Ticket Videos
                             </div>
                             {/* <!-- 70% Width --> */}
-                            <div className="w-[80%] ">
+                            <div className="w-[100%] sm:w-[80%]">
                                 {/* <!-- Owl Carousel --> */}
                                 <div className="carousel-wrapper w-full overflow-hidden relative">
                                     <div className="owl-carousel video-carousel">
                                         <div
-                                            className="item cursor-pointer relative rounded-lg border border-gray-200 bg-[url('./assets/img/v1.webp')] bg-cover bg-center py-3">
+                                            className="item cursor-pointer relative rounded-lg border border-gray-200 bg-[url('../img/v1.webp')] bg-cover bg-center py-3">
                                             <i className="fas fa-play plyIcon"></i><video muted className="w-full">
                                                 <source src="https://youtu.be/joiyb6c_Ry4?si=BhzVVORXAMUL_hLA"
                                                     type="video/mp4" />
                                             </video></div>
                                         <div
-                                            className="item cursor-pointer relative rounded-lg border border-gray-200 bg-[url('./assets/img/v1.webp')] bg-cover bg-center py-3">
+                                            className="item cursor-pointer relative rounded-lg border border-gray-200 bg-[url('../img/v1.webp')] bg-cover bg-center py-3">
                                             <i className="fas fa-play plyIcon"></i> <video muted className="w-full">
                                                 <source src="https://youtu.be/joiyb6c_Ry4?si=BhzVVORXAMUL_hLA"
                                                     type="video/mp4" />
@@ -329,7 +331,7 @@ function MarketingVipResourcesHub() {
                 <div className="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
                     <div className="container px-5 py-10 mx-auto">
                         <div className="xl:w-1/1 md:w-1/1">
-                            <h2 className="text-xl font-semibold mb-2 transition-colors mb-4 text-center">YouTube
+                            <h2 className="text-l sm:text-2xl font-semibold mb-2 transition-colors mb-4 text-center">YouTube
                                 Authority</h2>
                             <iframe
                                 src="https://docs.google.com/viewer?url=http://www.pdf995.com/samples/pdf.pdf&embedded=true"
@@ -358,29 +360,29 @@ function MarketingVipResourcesHub() {
 
                 <div className="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
                     <div className="container px-5 py-10 mx-auto">
-                        <div className="grid grid-cols-3 gap-4">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                             <div className="xl:w-1/1 md:w-1/1">
                                 <div
                                     className="border flex flex-col p-2 relative overflow-hidden rounded-xl transition-all duration-300 cursor-pointer group ring-1 ring-blue-500 bg-gradient-to-br from-blue-50 to-white">
-                                    <img className="lg:w-1/1 md:w-3/6 w-5/6 mb-2 object-cover objet-center mx-auto rounded-xl"
+                                    <img className="lg:w-1/1 mb-2 object-cover objet-center mx-auto rounded-xl"
                                         alt="hero" src="/img/Emma.png" />
-                                    <h3 className="text-center text-2xl font-semibold mb-2 transition-colors">Emma's
+                                    <h3 className="text-center text-l sm:text-2xl font-semibold mb-2 transition-colors">Emma's
                                         Health and Fitness</h3>
                                 </div>
                             </div>
                             <div className="xl:w-1/1 md:w-1/1">
                                 <div
                                     className="border flex flex-col p-2 relative overflow-hidden rounded-xl transition-all duration-300 cursor-pointer group ring-1 ring-blue-500 bg-gradient-to-br from-blue-50 to-white">
-                                    <img className="lg:w-1/1 md:w-3/6 w-5/6 mb-2 object-cover objet-center mx-auto rounded-xl" alt="hero" src="/img/Emma.png" />
-                                    <h3 className="text-center text-2xl font-semibold mb-2 transition-colors">Daniel's
+                                    <img className="lg:w-1/1  mb-2 object-cover objet-center mx-auto rounded-xl" alt="hero" src="/img/Emma.png" />
+                                    <h3 className="text-center text-l sm:text-2xl font-semibold mb-2 transition-colors">Daniel's
                                         Business Consultancy</h3>
                                 </div>
                             </div>
                             <div className="xl:w-1/1 md:w-1/1">
                                 <div
                                     className="border flex flex-col p-2 relative overflow-hidden rounded-xl transition-all duration-300 cursor-pointer group ring-1 ring-blue-500 bg-gradient-to-br from-blue-50 to-white">
-                                    <img className="lg:w-1/1 md:w-3/6 w-5/6 mb-2 object-cover objet-center mx-auto rounded-xl" alt="hero" src="/img/Emma.png" />
-                                    <h3 className="text-center text-2xl font-semibold mb-2 transition-colors">Samantha's
+                                    <img className="lg:w-1/1  mb-2 object-cover objet-center mx-auto rounded-xl" alt="hero" src="/img/Emma.png" />
+                                    <h3 className="text-center text-l sm:text-2xl font-semibold mb-2 transition-colors">Samantha's
                                         Teaching</h3>
                                 </div>
                             </div>

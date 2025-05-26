@@ -4,11 +4,11 @@ import React from 'react'
 function BookACall() {
   return (
     <>
-    <section className="text-gray-600  p-5 body-font m7-8 font-['Montesserat'] ">
-        <div className="container p-15 w-full max-w-7/8 mx-auto shadow-[0_10px_50px_-12px_rgba(124,58,237,0.25)] rounded-l ">
+    <section className="text-gray-600  sm:p-5 p-1 body-font my-8 font-['Montesserat'] ">
+        <div className="container sm:p-15 p-2 w-full max-w-7/8 mx-auto shadow-[0_10px_50px_-12px_rgba(124,58,237,0.25)] rounded-l ">
             <div className="text-center w-full mb-5">
-                <img className="lg:w-1/10 md:w-3/6 w-5/6 mb-5 object-cover objet-center mx-auto" alt="hero" src="/img/high-ticket-contact.png" />
-                <h1 className="mb-4 text-4xl text-[#000] tracking-tight font-extrabold">Turn Your Ideas Into Action—Let’s Talk!</h1>
+                <img className="sm:lg:w-1/10 w-1/3 mb-5 object-cover objet-center mx-auto" alt="hero" src="/img/high-ticket-contact.png" />
+                <h1 className="mb-4 sm:text-4xl text-2xl  text-[#000] tracking-tight font-extrabold">Turn Your Ideas Into Action—Let’s Talk!</h1>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 w-full ">
@@ -34,7 +34,7 @@ function BookACall() {
 
             </div>
             <h2 className="title-font font-medium text-2xl text-center text-gray-900 pt-5 font-['Montesserat']"> Spots fill up quickly - reserve yours today!</h2>
-            <button className="md:px-5 mt-5 mx-auto px-2.5 py-2.5 rounded-lg font-medium text-2xl flex items-center gap-2 transition-all duration-200  bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white shadow-[0_4px_10px_-3px_rgba(124,58,237,0.5)] font-['Montesserat']">BOOK  A CALL NOW!</button>
+            <button className="md:px-5 mt-5 mb-5 mx-auto px-2.5 py-2.5 rounded-lg font-medium text-2xl flex items-center gap-2 transition-all duration-200  bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white shadow-[0_4px_10px_-3px_rgba(124,58,237,0.5)] font-['Montesserat']">BOOK  A CALL NOW!</button>
         </div>
         
     </section>
