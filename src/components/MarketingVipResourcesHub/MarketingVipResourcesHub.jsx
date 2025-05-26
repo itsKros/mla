@@ -57,7 +57,7 @@ function MarketingVipResourcesHub() {
               });
             });
     
-            // Reinitialize OwlCarousel
+            //OwlCarousel
             const $carousel = $('.video-carousel');
             if ($carousel.data('owl.carousel')) {
               $carousel.trigger('destroy.owl.carousel');
