@@ -105,16 +105,23 @@
 
 /* Ai Book */
 .j-Assis li{
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+.j-Assis li:hover::before{
+  background: #204bc1;
+    color: #FFF;
 }
 .j-Assis li::before{ 
 content: "\f061";
+    content: "\f061";
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     font-size: 14px;
     margin-right: 10px;
-    background: #204bc1;
-    color: #fff;
+    background: #204bc100;
+    color: #204bc1;
     padding: 4px 5px;
     border-radius: 5px;
+    border: solid 1px #204bc14f;
 }
