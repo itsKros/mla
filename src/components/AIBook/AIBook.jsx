@@ -63,7 +63,7 @@ function AIBook() {
                             </ul>
                         </div>
                     </div>
-                </div>
+                </div> 
             </section>
             <section className="text-gray-600 body-font overflow-hidden bg-no-repeat bg-center bg-cover bg-fixed" style={{ backgroundImage: "url('/img/section-bg-1.png')" }}>
                 <div className="container sm:px-5 px-1 py-24 grid sm:grid-cols-2 grid-cols-1 gap-1 sm:gap-4 mx-auto">
