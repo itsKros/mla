@@ -125,3 +125,13 @@ content: "\f061";
     border-radius: 5px;
     border: solid 1px #204bc14f;
 }
+
+.backA .fa-arrow-left::before {
+    content: "\f060";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 22px;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+}

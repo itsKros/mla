@@ -40,17 +40,14 @@ function Header() {
                             </li>
                             <li>
                                 <NavLink
-                                    to="ai-book"
+                                    to="ai-tools"
                                     className={({isActive}) =>
                                         `flex items-center text-gray-700 hover:text-primary  ${isActive ? "text-primary" : "text-gray-700"} font-semibold`
                                     }
                                 >
-                                    AI Book
+                                    AI Tools
                                 </NavLink>                                
-                            </li>
-                            
-                            
-                            
+                            </li> 
                         </ul>
                     </div>
                 </div>
