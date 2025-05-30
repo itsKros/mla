@@ -10,7 +10,8 @@ import Layout from './Layout.jsx'
 import Home from './components/Home/Home.jsx'
 import BookACall from './components/BookACall/BookACall.jsx'
 import MarketingVipResourcesHub from './components/MarketingVipResourcesHub/MarketingVipResourcesHub.jsx'
-import AITools from './components/AITools/AITools.jsx' 
+import AITools from './components/AITools/AITools.jsx'
+import BookSpotlight from './components/BookSpotlight/BookSpotlight.jsx'
 
 
 
@@ -19,7 +20,8 @@ const router = createBrowserRouter(
     <Route path='/' element={<Layout />}>
       <Route path='' element={<MarketingVipResourcesHub />}/>
       <Route path='book-a-call' element={<BookACall />}/>      
-      <Route path='ai-tools' element={<AITools/>} /> 
+      <Route path='ai-tools' element={<AITools/>} />
+      <Route path='course-book-spotlight' element={<BookSpotlight />} />
     </Route>
   )
 );

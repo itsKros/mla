@@ -3,6 +3,15 @@ import React from 'react'
 function AITools() {
     return (
         <>
+            <style>
+                {`
+                    /* Ai Book */
+                    
+
+                    
+
+                 `}
+             </style>
             <section className="text-gray-600 pb-10 body-font overflow-hidden bg-[url('/img/deco-back.webp')] bg-cover bg-center">
                 <div className="container px-5 py-24 max-w-7/8 mx-auto">
                     <div className="flex flex-wrap -m-12 sm:px-0 px-5">

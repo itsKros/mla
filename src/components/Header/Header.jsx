@@ -47,6 +47,16 @@ function Header() {
                                 >
                                     AI Tools
                                 </NavLink>                                
+                            </li>
+                            <li>
+                                <NavLink
+                                    to="course-book-spotlight"
+                                    className={({isActive}) =>
+                                        `flex items-center text-gray-700 hover:text-primary  ${isActive ? "text-primary" : "text-gray-700"} font-semibold`
+                                    }
+                                >
+                                    Course & Book Spotlight
+                                </NavLink>                                
                             </li> 
                         </ul>
                     </div>

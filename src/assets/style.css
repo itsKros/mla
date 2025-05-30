@@ -3,38 +3,7 @@
 
 
 .grad-bg {background: linear-gradient(to right bottom, rgb(123, 31, 162), rgb(229, 57, 53));}
-.bac li:before {
-    content: "\f00c";
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    margin-right: 8px;
-    font-size: 15px;
-    color: #fff;
-    background: #2047bb;
-    padding: 4px 5px;
-    border-radius: 3px;
-}
 
-.bac li {
-    position: relative;
-    padding-left: 28px;
-  }
-  
-  .bac li:before {
-    content: "\f00c"; /* Check icon */
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900; /* Required for solid icons */
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #fff;
-    background: #2047bb;
-    padding: 4px 6px;
-    font-size: 14px;
-    border-radius: 3px;
-    line-height: 1;
-  }
 
 *{
     font-family: "Merriweather Sans", sans-serif !important;
@@ -69,6 +38,38 @@
     font-weight: 900; /* Solid style */
 }
 
+.backA .fa-arrow-left::before {
+      content: "\f060";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      font-size: 22px;
+      color: #fff;
+      padding: 8px;
+      border-radius: 5px;
+  }
+
+.j-Assis li{
+  margin-bottom: 10px;
+  }
+
+  .j-Assis li:hover::before{
+  background: #204bc1;
+      color: #FFF;
+  }
+      
+  .j-Assis li::before{ 
+  content: "\f061";
+      content: "\f061";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      font-size: 14px;
+      margin-right: 10px;
+      background: #204bc100;
+      color: #204bc1;
+      padding: 4px 5px;
+      border-radius: 5px;
+      border: solid 1px #204bc14f;
+  }
 
 .owl-carousel .owl-nav.disabled {
     display: block !important;
@@ -102,36 +103,4 @@
 .owl-carousel.owl-loaded {
     display: grid !important;
 }
-
-/* Ai Book */
-.j-Assis li{
-  margin-bottom: 10px;
-}
-
-.j-Assis li:hover::before{
-  background: #204bc1;
-    color: #FFF;
-}
-.j-Assis li::before{ 
-content: "\f061";
-    content: "\f061";
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    font-size: 14px;
-    margin-right: 10px;
-    background: #204bc100;
-    color: #204bc1;
-    padding: 4px 5px;
-    border-radius: 5px;
-    border: solid 1px #204bc14f;
-}
-
-.backA .fa-arrow-left::before {
-    content: "\f060";
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    font-size: 22px;
-    color: #fff;
-    padding: 8px;
-    border-radius: 5px;
-}
+ 
