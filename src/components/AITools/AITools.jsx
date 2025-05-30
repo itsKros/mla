@@ -69,7 +69,7 @@ function AITools() {
                             <h3 className="mt-5 text-[#000] font-medium text-lg w-full text-center">Plus we're adding new tools all the time!</h3>
 
                         </div>
-                        <div className="w-1/1 lg:w-1/3 flex flex-col items-start relative overflow-hidden rounded-lg transition-all duration-300 cursor-pointer group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
+                        <div className="w-1/1 lg:w-1/3 flex flex-col items-start relative overflow-hidden rounded-lg transition-all duration-300 group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
                             <h2 className="text-lg w-1/1 pb-2 px-5 title-font font-medium text-gray-900 mt-4 mb-4 border-b-1 border-gray-200">Jump to Assistant (click to jump)</h2>
                             <ul className="pl-5 pb-5 text-sm font-normal j-Assis">
                                 <a href='#productResearchAssistant'><li>Product Research Assistant</li></a>
