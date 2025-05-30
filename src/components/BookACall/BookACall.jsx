@@ -41,43 +41,7 @@ function BookACall() {
 
 
     return (
-        <>
-        <style>
-                {`
-                  .bac li:before {
-                content: "\f00c";
-                font-family: "Font Awesome 6 Free";
-                font-weight: 900;
-                margin-right: 8px;
-                font-size: 15px;
-                color: #fff;
-                background: #2047bb;
-                padding: 4px 5px;
-                border-radius: 3px;
-            }
-
-            .bac li {
-            position: relative;
-            padding-left: 28px;
-            }
-
-            .bac li:before {
-            content: "\f00c"; /* Check icon */
-            font-family: "Font Awesome 6 Free";
-            font-weight: 900; /* Required for solid icons */
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #fff;
-            background: #2047bb;
-            padding: 4px 6px;
-            font-size: 14px;
-            border-radius: 3px;
-            line-height: 1;
-            }
-            `}
-            </style>
+        <>     
             <section className="text-gray-600  sm:p-5 p-1 body-font my-8 font-['Montesserat'] ">
                 <div className="container sm:p-15 p-2 w-full max-w-7/8 mx-auto shadow-[0_10px_50px_-12px_rgba(124,58,237,0.25)] rounded-l ">
                     <div className="text-center w-full mb-5">
@@ -116,8 +80,8 @@ function BookACall() {
                         className="md:px-5 mt-5 mb-5 mx-auto px-2.5 py-2.5 rounded-lg font-medium text-2xl flex items-center gap-2 transition-all duration-200 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white shadow-[0_4px_10px_-3px_rgba(124,58,237,0.5)] font-['Montesserat'] cursor-pointer"
                     >
                         BOOK A CALL NOW!
-                    </button> 
-                </div> 
+                    </button>
+                </div>
             </section>
         </>
     )
