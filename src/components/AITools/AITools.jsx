@@ -97,7 +97,7 @@ function AITools() {
             <section className="text-gray-600 body-font overflow-hidden bg-no-repeat bg-center bg-cover bg-fixed" style={{ backgroundImage: "url('/img/section-bg-1.png')" }}>
                 <div className="container sm:px-5 px-1 pt-24 pb-5 grid sm:grid-cols-2 grid-cols-1 gap-1 sm:gap-4 mx-auto">
                     <div class="p-4 w-1/1" id='productResearchAssistant'>
-                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 cursor-pointer group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
+                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
                             <div class="flex items-center p-5 border-b-1 border-gray-200 border-opacity-60">
                                 <img className="w-1/10 object-cover objet-center mr-3" alt="hero" src="/img/icons-person.png" />
                                 <h2 class="text-gray-900 sm:text-2xl text-lg title-font font-medium">Product Research Assistant</h2>
@@ -107,7 +107,7 @@ function AITools() {
                                     <div class="relative text-[#000]">
                                         <label for="message" class="leading-7 text-base font-light text-gray-600">What product are you researching? - Andy</label>
                                         <textarea id="message" name="message" class="w-full mt-2 bg-gray-100 bg-opacity-50 rounded rounded-lg border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-                                        <button class="w-1/1 md:py-3 px-2.5 py-3 cursor-pointer content-center rounded-lg font-medium text-lg text-center gap-2 transition-all duration-200 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white shadow-[0_4px_10px_-3px_rgba(124,58,237,0.5)]">Create</button>
+                                        <button class="w-1/1 md:py-3 px-2.5 py-3 content-center rounded-lg font-medium text-lg text-center gap-2 transition-all duration-200 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white shadow-[0_4px_10px_-3px_rgba(124,58,237,0.5)]">Create</button>
                                         <h3 className="sm:text-sm text-xs title-font font-normal mt-4">Just type a product or category, and <b>Andy gives you quick insights, trends, and competitor info.</b></h3>
                                     </div>
                                 </div>
@@ -115,7 +115,7 @@ function AITools() {
                         </div>
                     </div>
                     <div class="p-4 w-1/1" id='seoKeywordAssistant'>
-                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 cursor-pointer group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
+                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
                             <div class="flex items-center p-5 border-b-1 border-gray-200 border-opacity-60">
                                 <img className="w-1/10 object-cover objet-center mr-3" alt="hero" src="/img/icons-person.png" />
                                 <h2 class="text-gray-900 sm:text-2xl text-lg title-font font-medium">SEO Keyword Assistant</h2>
@@ -133,7 +133,7 @@ function AITools() {
                         </div>
                     </div>
                     <div class="p-4 w-1/1" id='headlineCreationAssistant'>
-                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 cursor-pointer group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
+                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
                             <div class="flex items-center p-5 border-b-1 border-gray-200 border-opacity-60">
                                 <img className="w-1/10 object-cover objet-center mr-3" alt="hero" src="/img/icons-person.png" />
                                 <h2 class="text-gray-900 sm:text-2xl text-lg title-font font-medium">Headline Creation Assistant</h2>
@@ -151,7 +151,7 @@ function AITools() {
                         </div>
                     </div>
                     <div class="p-4 w-1/1" id='blogPostIdeaAssistant'>
-                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 cursor-pointer group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
+                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
                             <div class="flex items-center p-5 border-b-1 border-gray-200 border-opacity-60">
                                 <img className="w-1/10 object-cover objet-center mr-3" alt="hero" src="/img/icons-person.png" />
                                 <h2 class="text-gray-900 sm:text-2xl text-lg title-font font-medium">Blog Post Idea Assistant</h2>
@@ -169,7 +169,7 @@ function AITools() {
                         </div>
                     </div>
                     <div class="p-4 w-1/1" id='offerNameGenerator'>
-                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 cursor-pointer group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
+                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
                             <div class="flex items-center p-5 border-b-1 border-gray-200 border-opacity-60">
                                 <img className="w-1/10 object-cover objet-center mr-3" alt="hero" src="/img/icons-person.png" />
                                 <h2 class="text-gray-900 sm:text-2xl text-lg title-font font-medium">Offer Name Generator</h2>
@@ -188,7 +188,7 @@ function AITools() {
                     </div>
 
                     <div class="p-4 w-1/1" id='offerSalesCopyAssistant'>
-                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 cursor-pointer group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
+                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
                             <div class="flex items-center p-5 border-b-1 border-gray-200 border-opacity-60">
                                 <img className="w-1/10 object-cover objet-center mr-3" alt="hero" src="/img/icons-person.png" />
                                 <h2 class="text-gray-900 sm:text-2xl text-lg title-font font-medium">Offer Sales Copy Assistant</h2>
@@ -206,7 +206,7 @@ function AITools() {
                         </div>
                     </div>
                     <div class="p-4 w-1/1" id='productNameGenerator'>
-                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 cursor-pointer group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
+                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
                             <div class="flex items-center p-5 border-b-1 border-gray-200 border-opacity-60">
                                 <img className="w-1/10 object-cover objet-center mr-3" alt="hero" src="/img/icons-person.png" />
                                 <h2 class="text-gray-900 sm:text-2xl text-lg title-font font-medium">Product Name Generator</h2>
@@ -224,7 +224,7 @@ function AITools() {
                         </div>
                     </div>
                     <div class="p-4 w-1/1" id='productDescriptionAssistant'>
-                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 cursor-pointer group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
+                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
                             <div class="flex items-center p-5 border-b-1 border-gray-200 border-opacity-60">
                                 <img className="w-1/10 object-cover objet-center mr-3" alt="hero" src="/img/icons-person.png" />
                                 <h2 class="text-gray-900 sm:text-2xl text-lg title-font font-medium">Product Description Assistant</h2>
@@ -242,7 +242,7 @@ function AITools() {
                         </div>
                     </div>
                     <div class="p-4 w-1/1" id='optInCopyAssistant'>
-                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 cursor-pointer group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
+                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
                             <div class="flex items-center p-5 border-b-1 border-gray-200 border-opacity-60">
                                 <img className="w-1/10 object-cover objet-center mr-3" alt="hero" src="/img/icons-person.png" />
                                 <h2 class="text-gray-900 sm:text-2xl text-lg title-font font-medium">Opt In Copy Assistant</h2>
@@ -260,7 +260,7 @@ function AITools() {
                         </div>
                     </div>
                     <div class="p-4 w-1/1" id='emailCopyAssistant'>
-                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 cursor-pointer group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
+                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
                             <div class="flex items-center p-5 border-b-1 border-gray-200 border-opacity-60">
                                 <img className="w-1/10 object-cover objet-center mr-3" alt="hero" src="/img/icons-person.png" />
                                 <h2 class="text-gray-900 sm:text-2xl text-lg title-font font-medium">Email Copy Assistant</h2>
@@ -278,7 +278,7 @@ function AITools() {
                         </div>
                     </div>
                     <div class="p-4 w-1/1" id='discountPageCopyAssistant'>
-                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 cursor-pointer group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
+                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
                             <div class="flex items-center p-5 border-b-1 border-gray-200 border-opacity-60">
                                 <img className="w-1/10 object-cover objet-center mr-3" alt="hero" src="/img/icons-person.png" />
                                 <h2 class="text-gray-900 sm:text-2xl text-lg title-font font-medium">Discount Page Copy Assistant</h2>
@@ -296,7 +296,7 @@ function AITools() {
                         </div>
                     </div>
                     <div class="p-4 w-1/1" id='upsellCopyAssistant'>
-                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 cursor-pointer group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
+                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
                             <div class="flex items-center p-5 border-b-1 border-gray-200 border-opacity-60">
                                 <img className="w-1/10 object-cover objet-center mr-3" alt="hero" src="/img/icons-person.png" />
                                 <h2 class="text-gray-900 sm:text-2xl text-lg title-font font-medium">Upsell Copy Assistant</h2>
@@ -314,7 +314,7 @@ function AITools() {
                         </div>
                     </div>
                     <div class="p-4 w-1/1" id='socialPostAssistant'>
-                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 cursor-pointer group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
+                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
                             <div class="flex items-center p-5 border-b-1 border-gray-200 border-opacity-60">
                                 <img className="w-1/10 object-cover objet-center mr-3" alt="hero" src="/img/icons-person.png" />
                                 <h2 class="text-gray-900 sm:text-2xl text-lg title-font font-medium">Social Post Assistant</h2>
@@ -332,7 +332,7 @@ function AITools() {
                         </div>
                     </div>
                     <div class="p-4 w-1/1" id='aboutUsCopyAssistant'>
-                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 cursor-pointer group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
+                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
                             <div class="flex items-center p-5 border-b-1 border-gray-200 border-opacity-60">
                                 <img className="w-1/10 object-cover objet-center mr-3" alt="hero" src="/img/icons-person.png" />
                                 <h2 class="text-gray-900 sm:text-2xl text-lg title-font font-medium">About Us Copy Assistant</h2>
@@ -350,7 +350,7 @@ function AITools() {
                         </div>
                     </div>
                     <div class="p-4 w-1/1" id='adHeadlineAssistant'>
-                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 cursor-pointer group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
+                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
                             <div class="flex items-center p-5 border-b-1 border-gray-200 border-opacity-60">
                                 <img className="w-1/10 object-cover objet-center mr-3" alt="hero" src="/img/icons-person.png" />
                                 <h2 class="text-gray-900 sm:text-2xl text-lg title-font font-medium">Ad Headline Assistant</h2>
@@ -368,7 +368,7 @@ function AITools() {
                         </div>
                     </div>
                     <div class="p-4 w-1/1" id='adCopyAssistant'>
-                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 cursor-pointer group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
+                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
                             <div class="flex items-center p-5 border-b-1 border-gray-200 border-opacity-60">
                                 <img className="w-1/10 object-cover objet-center mr-3" alt="hero" src="/img/icons-person.png" />
                                 <h2 class="text-gray-900 sm:text-2xl text-lg title-font font-medium">Ad Copy Assistant</h2>
@@ -388,7 +388,7 @@ function AITools() {
                 </div>
                 <div className="container sm:max-w-5/8 max-w-5/1 mt-0 mb-24 mx-auto">
                     <div class="p-4 w-1/1" id='anythingMarketingAssistant'>
-                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 cursor-pointer group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
+                        <div class="flex rounded-lg h-full flex-col verflow-hidden rounded-lg transition-all duration-300 group border border-gray-200 hover:border-blue-200 bg-white hover:shadow-md">
                             <div class="flex items-center p-5 border-b-1 border-gray-200 border-opacity-60">
                                 <img className="w-1/10 object-cover objet-center mr-3" alt="hero" src="/img/icons-person.png" />
                                 <h2 class="text-gray-900 sm:text-2xl text-lg title-font font-medium">Anything Marketing Assistant</h2>
