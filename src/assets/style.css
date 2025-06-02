@@ -140,4 +140,11 @@ html {
 .owl-carousel.owl-loaded {
     display: grid !important;
 }
- 
+
+/* Popup Close Button */
+.closeBtn {
+    background: #fff !important;
+    padding: 0px 8px;
+    border-radius: 3px;
+}
+/* Popup Close Button */

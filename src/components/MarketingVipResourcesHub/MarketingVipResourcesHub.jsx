@@ -1,13 +1,22 @@
-import React, { useState, useEffect } from 'react'; 
+import React, { useState, useEffect } from 'react';
 
-const MarketingVipResourcesHub = () => { 
+const MarketingVipResourcesHub = () => {
 
-    // ForEbook
+    //Ebook Open
     const [modalOpen, setModalOpen] = useState(false);
     const [pdfUrl, setPdfUrl] = useState('');
 
+    // Open modal with proper preview link (Google Drive detection)
     const openModal = (link) => {
-        setPdfUrl(link);
+        const match = link.match(/\/d\/([a-zA-Z0-9_-]+)\//);
+        const fileId = match ? match[1] : null;
+
+        let previewLink = link;
+        if (fileId) {
+            previewLink = `https://drive.google.com/file/d/${fileId}/preview`;
+        }
+
+        setPdfUrl(previewLink);
         setModalOpen(true);
     };
 
@@ -16,150 +25,166 @@ const MarketingVipResourcesHub = () => {
         setPdfUrl('');
     };
 
+    // Prevent background scroll when modal is open
+    useEffect(() => {
+        document.body.style.overflow = modalOpen ? 'hidden' : 'auto';
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [modalOpen]);
+
+    // Handle download button click: trigger download programmatically
+    const getDownloadLink = (link) => {
+        const match = link.match(/\/d\/([a-zA-Z0-9_-]+)\//);
+        const fileId = match ? match[1] : null;
+        return fileId ? `https://drive.google.com/uc?export=download&id=${fileId}` : link;
+    };
+
     const EBooks = [
         {
             title: "Affiliate Marketing",
             subtitle: "Tap to read online!",
             image: "/img/Affiliate-Marketing-img.webp",
-            link: "/ebooks/Affiliate Marketing (MLA).pdf",
+            link: "https://drive.google.com/file/d/15T4VajWXJvyFnas_h_x2ICCfSGW6OxAl/preview",
         },
         {
             title: "Captivate Your Audience",
             subtitle: "Tap to read online!",
             image: "/img/Captivate-Your-Audience-img.webp",
-            link: "/ebooks/Captivate Your Audience (MLA).pdf",
+            link: "https://drive.google.com/file/d/1BWMttj-Mo5sT_k0DNYuWcxd51IwyKu6H/preview",
         },
         {
             title: "Copywriting Expert",
             subtitle: "Tap to read online!",
             image: "/img/Copywriting-Expert-MLA-img.webp",
-            link: "/ebooks/Copywriting Expert (MLA).pdf",
+            link: "https://drive.google.com/file/d/1JVNryEkhJWmC4O6-1wd8jiMi51Z0LQDi/preview",
         },
         {
             title: "Copywriting Influence",
             subtitle: "Tap to read online!",
             image: "/img/Copywriting-Influence-MLA-img.webp",
-            link: "/ebooks/Copywriting Influence (MLA).pdf",
+            link: "https://drive.google.com/file/d/1ehaZPKYXfvn9GFlWUUTEbciyoQBdM2Hg/preview",
         },
         {
             title: "Direct Messaging Strategy",
             subtitle: "Tap to read online!",
             image: "/img/Direct-Messaging-Strategy-MLA-img.webp",
-            link: "/ebooks/Direct Messaging Strategy (MLA).pdf",
+            link: "https://drive.google.com/file/d/1ZzDL9lt7AJKLJMRcX7KpJX_wqsA1Dovc/preview",
         },
         {
             title: "Email Marketing Expertise",
             subtitle: "Tap to read online!",
             image: "/img/Email-Marketing-Expertise-MLA-img.webp",
-            link: "/ebooks/Email Marketing Expertise (MLA).pdf",
+            link: "https://drive.google.com/file/d/1PyucQnf8eNf9wxx2D0cFhUoSI3P1BlYq/preview",
         },
         {
             title: "Email Marketing Success",
             subtitle: "Tap to read online!",
             image: "/img/Email-Marketing-Success-MLA-img.webp",
-            link: "/ebooks/Email Marketing Success (MLA).pdf",
+            link: "https://drive.google.com/file/d/1jKMu9RhweS8Pt9FN-xjSJDNxCIVU_zj7/preview",
         },
         {
             title: "Facebook Marketing Unleashed",
             subtitle: "Tap to read online!",
             image: "/img/Facebook-Marketing-Unleashed-MLA-img.webp",
-            link: "/ebooks/Facebook Marketing Unleashed (MLA).pdf",
+            link: "https://drive.google.com/file/d/1ED7waAnwWrdc1Ne9d0m0nrfohku5JgK5/preview",
         },
         {
             title: "High Ticket Authority",
             subtitle: "Tap to read online!",
             image: "/img/High-Ticket-Authority-MLA-img.webp",
-            link: "/ebooks/High Ticket Authority (MLA).pdf",
+            link: "https://drive.google.com/file/d/1boG4hQfaHy1Ijap4ivOFIR4l4NVcmh2e/preview",
         },
         {
             title: "High Ticket Authority Checklist",
             subtitle: "Tap to read online!",
             image: "/img/High-Ticket-Authority-Checklist-MLA.jpg",
-            link: "/ebooks/High Ticket Authority Checklist (MLA).pdf",
+            link: "https://drive.google.com/file/d/1p0PtPAw4fnnLKuoeBkMnp2lccfBSGqjO/preview",
         },
         {
             title: "High Ticket Clients Secrets",
             subtitle: "Tap to read online!",
             image: "/img/High-Ticket-Clients-Secrets-MLA-img.webp",
-            link: "/ebooks/High Ticket Clients Secrets (MLA).pdf",
+            link: "https://drive.google.com/file/d/12SCWv18HtwdMiqeIPJm2RWOmuB3BdFKn/preview",
         },
         {
             title: "Insta Profit Magnet",
             subtitle: "Tap to read online!",
             image: "/img/Insta-Profit-Magnet-MLA-img.jpg",
-            link: "/ebooks/Insta Profit Magnet (MLA).pdf",
+            link: "https://drive.google.com/file/d/1CwHDu6M358rTEZORrx5nAAYtxeXPL1Co/preview",
         },
         {
             title: "The Ultimate Online Business Blueprint",
             subtitle: "Tap to read online!",
             image: "/img/Part-4_-Marketing-MLA-img.webp",
-            link: "/ebooks/Part 4_ Marketing (MLA).pdf",
+            link: "https://drive.google.com/file/d/1G0Xo8kDNV0VcIWszmRl6knFLNRxuk8Xf/preview",
         },
         {
             title: "Social Media Marketing Made Simple",
             subtitle: "Tap to read online!",
             image: "/img/Social-Media-Marketing-Made-Simple-MLA-img.jpg",
-            link: "/ebooks/Social Media Marketing Made Simple (MLA).pdf",
+            link: "https://drive.google.com/file/d/14Bi4hy2jsfjC_bnMP9KbfNwkMs-7nJoM/preview",
         },
         {
             title: "Social Media Marketing Revolution",
             subtitle: "Tap to read online!",
             image: "/img/Social-Media-Marketing-Revolution-MLA-img.webp",
-            link: "/ebooks/Social Media Marketing Revolution (MLA).pdf",
+            link: "https://drive.google.com/file/d/1g_IVG7oGlOxFxZNoVgFAomeBeXmSyxe_/preview",
         },
         {
             title: "Solopreneur Success",
             subtitle: "Tap to read online!",
             image: "/img/Solopreneur-Success-MLA-img.webp",
-            link: "/ebooks/Solopreneur Success (MLA).pdf",
+            link: "https://drive.google.com/file/d/1iQOwi2AR2xi-VyFJFowFpESaXGGm1rFu/preview",
         },
         {
             title: "Supercharge Your Online Business",
             subtitle: "Tap to read online!",
             image: "/img/Supercharge-Your-Online-Business-MLA-img.webp",
-            link: "/ebooks/Supercharge Your Online Business (MLA).pdf",
+            link: "https://drive.google.com/file/d/14U-pQWrR5YFAxVIVdbyxgGTgHHuuWESR/preview",
         },
         {
             title: "The DALL-E 2 Advantage",
             subtitle: "Tap to read online!",
             image: "/img/The-DALL-E-2-Advantage-MLA-img.jpg",
-            link: "/ebooks/The DALL-E 2 Advantage (MLA).pdf",
+            link: "https://drive.google.com/file/d/14OXzVqBZzW0cI6V904hLFVA5I1K1-M9k/preview",
         },
         {
             title: "Tiktok Marketing",
             subtitle: "Tap to read online!",
             image: "/img/Tiktok-Marketing-MLA-img.webp",
-            link: "/ebooks/Tiktok Marketing (MLA).pdf",
+            link: "https://drive.google.com/file/d/1heVXzv_8WMPPUYRcFjeyshtiiXlBMx1I/preview",
         },
         {
             title: "Top 10 High Ticket Resources",
             subtitle: "Tap to read online!",
             image: "/img/Top-10-High-Ticket-Resources-MLA-img.webp",
-            link: "/ebooks/Top 10 High Ticket Resources (MLA).pdf",
+            link: "https://drive.google.com/file/d/1RdC8TXypZXVNuzL-BqXd-WXnnqpYQjNg/preview",
         },
         {
             title: "Voices of the Future",
             subtitle: "Tap to read online!",
             image: "/img/Voices-of-the-Future-MLA-img.webp",
-            link: "/ebooks/Voices of the Future (MLA).pdf",
+            link: "https://drive.google.com/file/d/1gbjyZ-s-2qRjaYofBuo6shtu39JqMMxb/preview",
         },
         {
             title: "YouTube Authority",
             subtitle: "Tap to read online!",
             image: "/img/YouTube-Authority-MLA.webp",
-            link: "/ebooks/YouTube Authority (MLA).pdf",
+            link: "https://drive.google.com/file/d/1DVC5TDTg2bQR3czjXif6oehEYHO4sAnw/preview",
         },
         {
             title: "YouTube Success Step By Step",
             subtitle: "Tap to read online!",
             image: "/img/YouTube-Success-Step-By-Step-MLA.webp",
-            link: "/ebooks/YouTube Success Step By Step (MLA).pdf",
+            link: "https://drive.google.com/file/d/1KpzyXCydk_nmzKYY-6rTYxmysXNMNacL/preview",
         },
 
     ];
 
-    // For Ebook
-    // For Video
+    // For Ebook Close
+
+    // For Video Open
     const [videoPopup, setVideoPopup] = useState(false);
     const [currentVideoUrl, setCurrentVideoUrl] = useState('');
 
@@ -176,35 +201,35 @@ const MarketingVipResourcesHub = () => {
     const highTicketVideos = [
         {
             bgLink: '/video/High_Ticket_Advanced_Videos/videoBg/v1.webp',
-            vdLink: '/video/High_Ticket_Advanced_Videos/1 Why Go For High Paying Clients.mp4',
+            vdLink: '/video/High_Ticket_Advanced_Videos/1-Why-Go-For-High-Paying-Clients.mp4',
         },
         {
             bgLink: '/video/High_Ticket_Advanced_Videos/videoBg/v2.webp',
-            vdLink: '/video/High_Ticket_Advanced_Videos/2 What it Takes to Close High Paying Clients.mp4',
+            vdLink: '/video/High_Ticket_Advanced_Videos/2-What-it-Takes-to-Close-High-Paying-Clients.mp4',
         },
         {
             bgLink: '/video/High_Ticket_Advanced_Videos/videoBg/v3.webp',
-            vdLink: '/video/High_Ticket_Advanced_Videos/3 How to Position Yourself as an Expert.mp4',
+            vdLink: '/video/High_Ticket_Advanced_Videos/3-How-to-Position-Yourself-as an-Expert.mp4',
         },
         {
             bgLink: '/video/High_Ticket_Advanced_Videos/videoBg/v4.webp',
-            vdLink: '/video/High_Ticket_Advanced_Videos/4 How to Identify and Qulify Clients.mp4',
+            vdLink: '/video/High_Ticket_Advanced_Videos/4-How-to-Identify-and-Qulify-Clients.mp4',
         },
         {
             bgLink: '/video/High_Ticket_Advanced_Videos/videoBg/v5.webp',
-            vdLink: '/video/High_Ticket_Advanced_Videos/5 The Sales Process.mp4',
+            vdLink: '/video/High_Ticket_Advanced_Videos/5-The-Sales-Process.mp4',
         },
         {
             bgLink: '/video/High_Ticket_Advanced_Videos/videoBg/v6.webp',
-            vdLink: '/video/High_Ticket_Advanced_Videos/6 Sales Objections.mp4',
+            vdLink: '/video/High_Ticket_Advanced_Videos/6-Sales-Objections.mp4',
         },
         {
             bgLink: '/video/High_Ticket_Advanced_Videos/videoBg/v7.webp',
-            vdLink: '/video/High_Ticket_Advanced_Videos/7 How to Price Your Product.mp4',
+            vdLink: '/video/High_Ticket_Advanced_Videos/7-How-to-Price-Your-Product.mp4',
         },
         {
             bgLink: '/video/High_Ticket_Advanced_Videos/videoBg/v8.webp',
-            vdLink: '/video/High_Ticket_Advanced_Videos/8 How to Deliver After Payment is Made.mp4',
+            vdLink: '/video/High_Ticket_Advanced_Videos/8-How-to-Deliver-After-Payment-is-Made.mp4',
         },
     ];
 
@@ -403,10 +428,11 @@ const MarketingVipResourcesHub = () => {
                                                     alt={ebook.title}
                                                     src={ebook.image}
                                                 />
+
                                                 <a
-                                                    href={ebook.link}
-                                                    download
+                                                    href={getDownloadLink(ebook.link)}
                                                     className="lg:w-1/1 md:px-5 px-2.5 py-3 content-center rounded-lg font-medium text-sm text-center gap-2 transition-all duration-200 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white shadow-[0_4px_10px_-3px_rgba(124,58,237,0.5)]"
+
                                                 >
                                                     Download
                                                 </a>
@@ -420,11 +446,11 @@ const MarketingVipResourcesHub = () => {
                                             onClick={closeModal}
                                         >
                                             <div
-                                                className="bg-white rounded-lg overflow-hidden shadow-lg max-w-4xl w-full h-[80vh] relative"
+                                                className="bg-white rounded-lg overflow-hidden shadow-lg max-w-4xl w-full h-[80vh] sm:h-[70vh] relative"
                                                 onClick={(e) => e.stopPropagation()}
                                             >
                                                 <button
-                                                    className="absolute top-2 right-2 text-red-500 text-xl"
+                                                    className="absolute closeBtn top-2 right-2 text-red-500 text-xl z-10"
                                                     onClick={closeModal}
                                                 >
                                                     &times;
@@ -435,9 +461,22 @@ const MarketingVipResourcesHub = () => {
                                                     frameBorder="0"
                                                     title="PDF Preview"
                                                 ></iframe>
+                                                <p className="text-center text-sm p-2 bg-gray-50">
+                                                    Can’t view the PDF?{' '}
+                                                    <a
+                                                        href={pdfUrl}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="text-blue-600 underline"
+                                                    >
+                                                        Download it here
+                                                    </a>
+                                                </p>
                                             </div>
                                         </div>
                                     )}
+
+
                                 </div>
                             </div>
                         </div>
@@ -575,7 +614,7 @@ const MarketingVipResourcesHub = () => {
                                                             onClick={() => openVideoPopup(video.vdLink)}
                                                         >
                                                             <i className="fas fa-play plyIcon absolute top-2 left-2 text-white text-xl z-10"></i>
-                                                            <video muted className="w-full opacity-0 pointer-events-none">
+                                                            <video muted loop autoplay preload="auto" playsinline="true" className="w-full opacity-0 pointer-events-none">
                                                                 <source src={video.vdLink} type="video/mp4" />
                                                             </video>
                                                         </div>
