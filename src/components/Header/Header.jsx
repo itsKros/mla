@@ -1,5 +1,5 @@
  import React, { useState } from 'react'
-import {Link, NavLink} from 'react-router'
+import {Link} from 'react-router'
 import logo from '../../assets/mla_logo.webp'
 
 function Header() {
@@ -19,44 +19,44 @@ function Header() {
                     <div id="mobile-menu-2" className={`justify-between items-center w-full lg:flex lg:w-auto lg:order-1 transition-all duration-300 ease-in-out ${ isOpen ? 'block' : 'hidden' }`} >
                         <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                             <li>
-                                <NavLink
+                                <Link
                                     to="/"
                                     className={({isActive}) =>
                                         `flex items-center text-gray-700 hover:text-primary  ${isActive ? "text-primary" : "text-gray-700"} font-semibold`
                                     }
                                 >
                                     Marketing Resources
-                                </NavLink>                                
+                                </Link>                                
                             </li>
                             <li>
-                                <NavLink
+                                <Link
                                     to="book-a-call"
                                     className={({isActive}) =>
                                         `flex items-center text-gray-700 hover:text-primary  ${isActive ? "text-primary" : "text-gray-700"} font-semibold`
                                     }
                                 >
                                     Book A Call
-                                </NavLink>                                
+                                </Link>                                
                             </li>
                             <li>
-                                <NavLink
+                                <Link
                                     to="ai-tools"
                                     className={({isActive}) =>
                                         `flex items-center text-gray-700 hover:text-primary  ${isActive ? "text-primary" : "text-gray-700"} font-semibold`
                                     }
                                 >
                                     AI Tools
-                                </NavLink>                                
+                                </Link>                                
                             </li>
                             <li>
-                                <NavLink
+                                <Link
                                     to="course-book-spotlight"
                                     className={({isActive}) =>
                                         `flex items-center text-gray-700 hover:text-primary  ${isActive ? "text-primary" : "text-gray-700"} font-semibold`
                                     }
                                 >
                                     Course & Book Spotlight
-                                </NavLink>                                
+                                </Link>                                
                             </li> 
                         </ul>
                     </div>
